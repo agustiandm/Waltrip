@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		52696B6C25C39CA50002DFB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52696B6B25C39CA50002DFB0 /* AppDelegate.swift */; };
 		52696B6E25C39CA50002DFB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52696B6D25C39CA50002DFB0 /* SceneDelegate.swift */; };
-		52696B7025C39CA50002DFB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52696B6F25C39CA50002DFB0 /* ViewController.swift */; };
 		52696B7325C39CA50002DFB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52696B7125C39CA50002DFB0 /* Main.storyboard */; };
 		52696B7525C39CAA0002DFB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52696B7425C39CAA0002DFB0 /* Assets.xcassets */; };
 		52696B7825C39CAA0002DFB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52696B7625C39CAA0002DFB0 /* LaunchScreen.storyboard */; };
+		52696B8825C39E990002DFB0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52696B8725C39E990002DFB0 /* LoginController.swift */; };
+		52696B8B25C3A5B50002DFB0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52696B8A25C3A5B50002DFB0 /* Extension.swift */; };
+		52696B8E25C3D75F0002DFB0 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52696B8D25C3D75F0002DFB0 /* SignUpController.swift */; };
+		52696B9125C3F35E0002DFB0 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52696B9025C3F35E0002DFB0 /* ForgotPasswordController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52696B6825C39CA50002DFB0 /* Wiltrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wiltrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52696B6B25C39CA50002DFB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52696B6D25C39CA50002DFB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52696B6F25C39CA50002DFB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52696B7225C39CA50002DFB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52696B7425C39CAA0002DFB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52696B7725C39CAA0002DFB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52696B7925C39CAA0002DFB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52696B8725C39E990002DFB0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		52696B8A25C3A5B50002DFB0 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		52696B8D25C3D75F0002DFB0 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		52696B9025C3F35E0002DFB0 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		52696B6A25C39CA50002DFB0 /* Wiltrip */ = {
 			isa = PBXGroup;
 			children = (
+				52696B8425C39CFB0002DFB0 /* Model */,
+				52696B8325C39CFA0002DFB0 /* View */,
+				52696B8225C39CF80002DFB0 /* Controller */,
+				52696B8125C39CF60002DFB0 /* Services */,
+				52696B8025C39CF40002DFB0 /* Utils */,
 				52696B6B25C39CA50002DFB0 /* AppDelegate.swift */,
 				52696B6D25C39CA50002DFB0 /* SceneDelegate.swift */,
-				52696B6F25C39CA50002DFB0 /* ViewController.swift */,
 				52696B7125C39CA50002DFB0 /* Main.storyboard */,
 				52696B7425C39CAA0002DFB0 /* Assets.xcassets */,
 				52696B7625C39CAA0002DFB0 /* LaunchScreen.storyboard */,
 				52696B7925C39CAA0002DFB0 /* Info.plist */,
 			);
 			path = Wiltrip;
+			sourceTree = "<group>";
+		};
+		52696B8025C39CF40002DFB0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				52696B8A25C3A5B50002DFB0 /* Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		52696B8125C39CF60002DFB0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		52696B8225C39CF80002DFB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52696B8725C39E990002DFB0 /* LoginController.swift */,
+				52696B8D25C3D75F0002DFB0 /* SignUpController.swift */,
+				52696B9025C3F35E0002DFB0 /* ForgotPasswordController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52696B8325C39CFA0002DFB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52696B8425C39CFB0002DFB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52696B7025C39CA50002DFB0 /* ViewController.swift in Sources */,
+				52696B8E25C3D75F0002DFB0 /* SignUpController.swift in Sources */,
+				52696B9125C3F35E0002DFB0 /* ForgotPasswordController.swift in Sources */,
 				52696B6C25C39CA50002DFB0 /* AppDelegate.swift in Sources */,
+				52696B8825C39E990002DFB0 /* LoginController.swift in Sources */,
 				52696B6E25C39CA50002DFB0 /* SceneDelegate.swift in Sources */,
+				52696B8B25C3A5B50002DFB0 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
